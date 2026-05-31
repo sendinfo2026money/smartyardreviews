@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="impact-site-verification" value="18bef01a-a8b2-4b8e-b322-2e40f439a4b6">
+<title>SmartYardReviews — Robot Lawn Mowers & Snow Blowers, Reviewed</title>
+<meta name="description" content="Independent reviews of robot lawn mowers and autonomous snow blowers. Tested by New England homeowners. Find the best model for your yard.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #1a1a18;
+  --ink2: #3a3a36;
+  --muted: #767670;
+  --border: #e2e0d8;
+  --bg: #fafaf7;
+  --surface: #ffffff;
+  --lawn: #2a6b2a;
+  --lawn-light: #edf5ed;
+  --snow: #1a5fa0;
+  --snow-light: #e8f0fb;
+  --accent: #c8420a;
+  --tag-bg: #f0ede6;
+  --max: 1120px;
+  --reading: 680px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── NAV ── */
+nav {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--ink);
+  text-decoration: none;
+  margin-right: 40px;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+}
+.nav-logo span { color: var(--lawn); }
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink2);
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background 0.15s, color 0.15s;
+}
+.nav-links a:hover { background: var(--tag-bg); color: var(--ink); }
+.nav-links a.active { color: var(--lawn); font-weight: 600; }
+.nav-cta {
+  background: var(--ink);
+  color: #fff !important;
+  padding: 7px 16px !important;
+  border-radius: 6px !important;
+}
+.nav-cta:hover { background: var(--ink2) !important; }
+.nav-right { display: flex; align-items: center; gap: 12px; margin-left: auto; }
+.nav-search {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--tag-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-size: 13px;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+/* ── DISCLOSURE ── */
+.disclosure-bar {
+  background: #fff8e8;
+  border-bottom: 1px solid #f0dfa8;
+  text-align: center;
+  padding: 8px 24px;
+  font-size: 12px;
+  color: #7a6020;
+  font-weight: 400;
+}
+.disclosure-bar a { color: #7a6020; text-decoration: underline; }
+
+/* ── HERO ── */
+.hero {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 64px 24px 56px;
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+.hero-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--lawn);
+  margin-bottom: 16px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--lawn);
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 4.5vw, 52px);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+.hero-sub {
+  font-size: 17px;
+  color: var(--ink2);
+  line-height: 1.65;
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink2);
+  background: var(--tag-bg);
+  padding: 5px 12px;
+  border-radius: 99px;
+  border: 1px solid var(--border);
+}
+.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--lawn);
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.15s, transform 0.1s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-primary:hover { background: #235523; transform: translateY(-1px); }
+.btn-secondary {
+  background: transparent;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1.5px solid var(--border);
+  transition: border-color 0.15s, background 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-secondary:hover { border-color: var(--ink); background: var(--tag-bg); }
+
+/* Hero graphic */
+.hero-visual {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 12px;
+}
+.hero-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.hero-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); transform: translateY(-2px); }
+.hero-card-icon {
+  font-size: 36px;
+  min-width: 52px;
+  height: 52px;
+  background: var(--surface);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+}
+.hero-card-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 3px;
+}
+.hero-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.hero-card-meta { font-size: 13px; color: var(--muted); }
+.hero-card-arrow {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+.hero-card:hover .hero-card-arrow { transform: translateX(4px); }
+.lawn-card .hero-card-icon { background: var(--lawn-light); }
+.snow-card .hero-card-icon { background: var(--snow-light); }
+
+/* ── SEASON BANNER ── */
+.season-banner {
+  background: var(--snow);
+  color: #fff;
+  padding: 14px 24px;
+}
+.season-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.season-banner strong { font-weight: 600; }
+.season-banner a { color: #fff; font-weight: 600; text-decoration: underline; margin-left: 4px; }
+.season-tag {
+  background: rgba(255,255,255,0.2);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+/* ── MAIN LAYOUT ── */
+.main {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 48px 24px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 56px;
+  align-items: start;
+}
+
+/* ── SECTION HEADERS ── */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.section-label h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.section-label-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+.section-label a {
+  font-size: 13px;
+  color: var(--lawn);
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ── FEATURED REVIEW ── */
+.featured-review {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 32px;
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.featured-review:hover { box-shadow: 0 6px 28px rgba(0,0,0,0.1); }
+.featured-img {
+  background: linear-gradient(135deg, #e8f5e8 0%, #d0e8d0 100%);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.featured-img .emoji-big { font-size: 72px; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15)); }
+.featured-img-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+.featured-body { padding: 24px; }
+.featured-cat {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--lawn);
+  margin-bottom: 8px;
+}
+.featured-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+.featured-excerpt { font-size: 15px; color: var(--ink2); line-height: 1.6; margin-bottom: 16px; }
+.featured-meta { display: flex; align-items: center; gap: 16px; }
+.rating-stars { color: #f0a020; font-size: 14px; }
+.featured-date { font-size: 13px; color: var(--muted); }
+.read-more { font-size: 14px; color: var(--lawn); font-weight: 600; margin-left: auto; }
+
+/* ── ARTICLE LIST ── */
+.article-list { display: flex; flex-direction: column; gap: 0; margin-bottom: 40px; }
+
+.article-item {
+  display: flex;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  align-items: flex-start;
+  transition: opacity 0.15s;
+}
+.article-item:hover { opacity: 0.8; }
+.article-item:first-child { border-top: 1px solid var(--border); }
+
+.article-thumb {
+  min-width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+.thumb-lawn { background: var(--lawn-light); }
+.thumb-snow { background: var(--snow-light); }
+
+.article-content { flex: 1; min-width: 0; }
+.article-cat {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.cat-lawn { color: var(--lawn); }
+.cat-snow { color: var(--snow); }
+
+.article-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--ink);
+  margin-bottom: 5px;
+}
+.article-excerpt { font-size: 13px; color: var(--muted); line-height: 1.5; }
+.article-meta { font-size: 12px; color: var(--muted); margin-top: 6px; }
+
+/* ── COMPARISON TABLE ── */
+.compare-section { margin-bottom: 40px; }
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background: var(--surface);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.compare-table th {
+  background: var(--tag-bg);
+  padding: 11px 14px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+}
+.compare-table td {
+  padding: 13px 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+  color: var(--ink2);
+}
+.compare-table tr:last-child td { border-bottom: none; }
+.compare-table tr:hover td { background: var(--bg); }
+.product-name { font-weight: 600; color: var(--ink); font-size: 14px; }
+.product-sub { font-size: 12px; color: var(--muted); font-weight: 400; }
+.price-tag { font-weight: 700; color: var(--ink); }
+.stars { color: #f0a020; font-size: 13px; }
+.pick-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.pick-top { background: #fff3e0; color: #b35000; border: 1px solid #f5c88a; }
+.pick-budget { background: #e8f5e8; color: var(--lawn); border: 1px solid #b8ddb8; }
+.pick-premium { background: var(--snow-light); color: var(--snow); border: 1px solid #a8cce8; }
+.btn-small {
+  display: inline-block;
+  padding: 5px 12px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+.btn-small:hover { background: var(--ink2); }
+
+/* ── SIDEBAR ── */
+.sidebar { display: flex; flex-direction: column; gap: 28px; }
+
+.sidebar-widget {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.widget-header {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--tag-bg);
+}
+.widget-body { padding: 18px; }
+
+/* Newsletter widget */
+.newsletter-widget { background: var(--ink); border-color: var(--ink); }
+.newsletter-widget .widget-header { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.1); color: rgba(255,255,255,0.5); }
+.newsletter-widget .widget-body { padding: 20px; }
+.newsletter-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.newsletter-sub { font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 16px; line-height: 1.5; }
+.newsletter-form { display: flex; flex-direction: column; gap: 8px; }
+.newsletter-input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Source Sans 3', sans-serif;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.newsletter-input::placeholder { color: rgba(255,255,255,0.35); }
+.newsletter-input:focus { border-color: rgba(255,255,255,0.4); }
+.newsletter-btn {
+  padding: 10px;
+  background: var(--lawn);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Source Sans 3', sans-serif;
+  transition: background 0.15s;
+}
+.newsletter-btn:hover { background: #235523; }
+.newsletter-note { font-size: 11px; color: rgba(255,255,255,0.35); text-align: center; }
+
+/* Quick links */
+.quick-links { list-style: none; }
+.quick-links li { border-bottom: 1px solid var(--border); }
+.quick-links li:last-child { border-bottom: none; }
+.quick-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 0;
+  text-decoration: none;
+  color: var(--ink2);
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+.quick-links a:hover { color: var(--lawn); }
+.quick-links-icon { font-size: 16px; min-width: 24px; }
+.quick-arrow { margin-left: auto; color: var(--border); font-size: 14px; }
+.quick-links a:hover .quick-arrow { color: var(--lawn); }
+
+/* About widget */
+.about-widget .widget-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.about-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--lawn-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border: 2px solid var(--border);
+}
+.author-name { font-weight: 600; font-size: 15px; color: var(--ink); }
+.author-sub { font-size: 12px; color: var(--muted); }
+.about-text { font-size: 13px; color: var(--ink2); line-height: 1.6; }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--ink);
+  color: rgba(255,255,255,0.7);
+  padding: 48px 24px 32px;
+  margin-top: 64px;
+}
+.footer-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 40px;
+}
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 12px;
+  display: block;
+}
+.footer-logo span { color: #6dc86d; }
+.footer-desc { font-size: 14px; line-height: 1.7; color: rgba(255,255,255,0.55); }
+.footer-col h4 {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 14px;
+}
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.footer-col a { color: rgba(255,255,255,0.65); text-decoration: none; font-size: 14px; transition: color 0.15s; }
+.footer-col a:hover { color: #fff; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.35);
+}
+.footer-bottom a { color: rgba(255,255,255,0.45); text-decoration: none; }
+.footer-bottom a:hover { color: rgba(255,255,255,0.7); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 860px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 32px; }
+  .hero-visual { display: none; }
+  .main { grid-template-columns: 1fr; gap: 40px; }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+  .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+  .nav-links { display: none; }
+  .compare-table { font-size: 12px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Smart<span>Yard</span>Reviews</a>
+    <ul class="nav-links">
+      <li><a href="#lawn" class="active">🌿 Lawn Mowers</a></li>
+      <li><a href="#snow">❄️ Snow Blowers</a></li>
+      <li><a href="#compare">Compare</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#newsletter" class="nav-cta">Free Guide ↓</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="nav-search">🔍 Search</div>
+    </div>
+  </div>
+</nav>
+
+<!-- FTC DISCLOSURE -->
+<div class="disclosure-bar">
+  ⚠️ <strong>Affiliate Disclosure:</strong> SmartYardReviews earns commissions from qualifying purchases. This never affects our ratings. <a href="#">Learn more →</a>
+</div>
+
+<!-- SEASON BANNER -->
+<div class="season-banner">
+  <div class="season-inner">
+    <span class="season-tag">❄️ Winter 2026</span>
+    <span><strong>Snow season is here for New England.</strong> We just finished testing the Yarbo robotic snow blower in a real CT driveway.</span>
+    <a href="#">Read our review →</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">Independent Reviews · New England Tested</div>
+      <h1>The Yard Does<br>Itself. Really.</h1>
+      <p class="hero-sub">Honest, hands-on reviews of robot lawn mowers and autonomous snow blowers — written by a Connecticut homeowner who actually uses them.</p>
+      <div class="hero-badges">
+        <span class="badge">📍 Tested in South Windsor, CT</span>
+        <span class="badge">🚫 No sponsored rankings</span>
+        <span class="badge">✅ Real buyer advice</span>
+      </div>
+      <div class="hero-btns">
+        <a href="#lawn" class="btn-primary">🌿 Best Lawn Mowers</a>
+        <a href="#snow" class="btn-secondary">❄️ Best Snow Blowers</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <a href="#lawn" class="hero-card lawn-card">
+        <div class="hero-card-icon">🤖</div>
+        <div>
+          <div class="hero-card-label">Top Pick 2026</div>
+          <div class="hero-card-title">Best Robot Lawn Mowers</div>
+          <div class="hero-card-meta">6 models tested · $400–$3,000</div>
+        </div>
+        <span class="hero-card-arrow">→</span>
+      </a>
+      <a href="#snow" class="hero-card snow-card">
+        <div class="hero-card-icon">❄️</div>
+        <div>
+          <div class="hero-card-label">New England Special</div>
+          <div class="hero-card-title">Best Robot Snow Blowers</div>
+          <div class="hero-card-meta">4 models reviewed · $2,000–$5,000</div>
+        </div>
+        <span class="hero-card-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT + SIDEBAR -->
+<div class="main">
+  <main>
+
+    <!-- FEATURED -->
+    <div id="lawn">
+      <div class="section-label">
+        <h2>🌿 Robot Lawn Mowers</h2>
+        <div class="section-label-line"></div>
+        <a href="#">View all →</a>
+      </div>
+    </div>
+
+    <a href="#" class="featured-review">
+      <div class="featured-img">
+        <span class="emoji-big">🤖</span>
+        <span class="featured-img-badge">⭐ Editor's Pick 2026</span>
+      </div>
+      <div class="featured-body">
+        <div class="featured-cat">🌿 Robot Lawn Mower · In-Depth Review</div>
+        <div class="featured-title">The Best Robot Lawn Mowers of 2026 — We Tested 6 Models So You Don't Have To</div>
+        <p class="featured-excerpt">After 3 months of side-by-side testing on a sloped Connecticut yard — including thick New England grass and late-season leaves — here's exactly which robot mower is worth your money at every price point.</p>
+        <div class="featured-meta">
+          <span class="rating-stars">★★★★★</span>
+          <span class="featured-date">Updated May 2026</span>
+          <span class="read-more">Read full guide →</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- LAWN ARTICLES -->
+    <div class="article-list">
+      <a href="#" class="article-item">
+        <div class="article-thumb thumb-lawn">🌿</div>
+        <div class="article-content">
+          <div class="article-cat cat-lawn">Lawn Mower Review</div>
+          <div class="article-title">Husqvarna Automower 430X Review — Is $2,500 Worth It?</div>
+          <p class="article-excerpt">The market leader gets a deep dive. Exceptional on slopes, surprisingly quiet, and genuinely autonomous — but is it overkill for most yards?</p>
+          <div class="article-meta">⏱ 8 min read · May 2026</div>
+        </div>
+      </a>
+      <a href="#" class="article-item">
+        <div class="article-thumb thumb-lawn">💰</div>
+        <div class="article-content">
+          <div class="article-cat cat-lawn">Buying Guide</div>
+          <div class="article-title">Robot Lawn Mower vs. Lawn Service — The Real 5-Year Cost Breakdown</div>
+          <p class="article-excerpt">CT lawn services run $40–80/visit. A robot pays itself off in under two seasons. We ran the full numbers.</p>
+          <div class="article-meta">⏱ 6 min read · April 2026</div>
+        </div>
+      </a>
+      <a href="#" class="article-item">
+        <div class="article-thumb thumb-lawn">⛰️</div>
+        <div class="article-content">
+          <div class="article-cat cat-lawn">Buyer's Guide</div>
+          <div class="article-title">Best Robot Mowers for Hilly & Uneven New England Yards</div>
+          <p class="article-excerpt">Connecticut yards are notoriously uneven. These 4 models handle 35–45° slopes without getting stuck or leaving stripes.</p>
+          <div class="article-meta">⏱ 7 min read · March 2026</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- SNOW SECTION -->
+    <div id="snow" style="margin-top:48px;">
+      <div class="section-label">
+        <h2>❄️ Robot Snow Blowers</h2>
+        <div class="section-label-line"></div>
+        <a href="#">View all →</a>
+      </div>
+    </div>
+
+    <a href="#" class="featured-review">
+      <div class="featured-img" style="background: linear-gradient(135deg, #d0e8f5 0%, #b0d0e8 100%);">
+        <span class="emoji-big">❄️</span>
+        <span class="featured-img-badge" style="background: var(--snow);">New — Full Season Test</span>
+      </div>
+      <div class="featured-body">
+        <div class="featured-cat" style="color: var(--snow);">❄️ Robot Snow Blower · Full Season Review</div>
+        <div class="featured-title">Yarbo Snow Blower Review — We Ran It Through a CT Winter. Here's What Happened.</div>
+        <p class="featured-excerpt">The $4,999 Yarbo promises to wake up automatically when snow falls and clear your driveway before you're out of bed. After a full South Windsor winter, we can tell you whether it keeps that promise.</p>
+        <div class="featured-meta">
+          <span class="rating-stars">★★★★☆</span>
+          <span class="featured-date">Updated March 2026</span>
+          <span class="read-more">Read full review →</span>
+        </div>
+      </div>
+    </a>
+
+    <div class="article-list">
+      <a href="#" class="article-item">
+        <div class="article-thumb thumb-snow">🏠</div>
+        <div class="article-content">
+          <div class="article-cat cat-snow">Comparison</div>
+          <div class="article-title">Robot Snow Blower vs. Hiring a Plow Service in New England — Full Cost Analysis</div>
+          <p class="article-excerpt">CT plow services average $35–60/visit, 15–20 times a season. The math is more compelling than you think.</p>
+          <div class="article-meta">⏱ 5 min read · November 2025</div>
+        </div>
+      </a>
+      <a href="#" class="article-item">
+        <div class="article-thumb thumb-snow">🌨️</div>
+        <div class="article-content">
+          <div class="article-cat cat-snow">Buyer's Guide</div>
+          <div class="article-title">Do Robot Snow Blowers Actually Work in New England Winters?</div>
+          <p class="article-excerpt">CT gets 35–50 inches annually with heavy, wet snow. We tested 4 autonomous units through the full season. Here's the honest answer.</p>
+          <div class="article-meta">⏱ 9 min read · October 2025</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- COMPARISON TABLE -->
+    <div class="compare-section" id="compare" style="margin-top:52px;">
+      <div class="section-label">
+        <h2>📊 Quick Comparison</h2>
+        <div class="section-label-line"></div>
+        <a href="#">Full table →</a>
+      </div>
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Rating</th>
+            <th>Best For</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="product-name">Husqvarna Automower 430X</div>
+              <div class="product-sub">🌿 Robot Lawn Mower</div>
+            </td>
+            <td><span class="price-tag">$2,499</span></td>
+            <td><span class="stars">★★★★★</span></td>
+            <td><span class="pick-badge pick-top">Top Pick</span></td>
+            <td><a href="#" class="btn-small">View →</a></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="product-name">Mammotion LUBA 2</div>
+              <div class="product-sub">🌿 Robot Lawn Mower</div>
+            </td>
+            <td><span class="price-tag">$1,599</span></td>
+            <td><span class="stars">★★★★☆</span></td>
+            <td><span class="pick-badge pick-premium">Best Value</span></td>
+            <td><a href="#" class="btn-small">View →</a></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="product-name">Worx Landroid M700</div>
+              <div class="product-sub">🌿 Robot Lawn Mower</div>
+            </td>
+            <td><span class="price-tag">$599</span></td>
+            <td><span class="stars">★★★★☆</span></td>
+            <td><span class="pick-badge pick-budget">Budget Pick</span></td>
+            <td><a href="#" class="btn-small">View →</a></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="product-name">Yarbo Snow Module</div>
+              <div class="product-sub">❄️ Robot Snow Blower</div>
+            </td>
+            <td><span class="price-tag">$4,999</span></td>
+            <td><span class="stars">★★★★☆</span></td>
+            <td><span class="pick-badge pick-top">Top Pick</span></td>
+            <td><a href="#" class="btn-small">View →</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <!-- Newsletter -->
+    <div class="sidebar-widget newsletter-widget" id="newsletter">
+      <div class="widget-header">Free Buyer's Guide</div>
+      <div class="widget-body">
+        <div class="newsletter-title">The 2026 Robot Yard Guide</div>
+        <p class="newsletter-sub">Which models are worth it, which to avoid, and what CT homeowners specifically need to know. Free PDF.</p>
+        <div class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email address">
+          <button class="newsletter-btn">Send Me the Guide →</button>
+          <div class="newsletter-note">No spam. Unsubscribe anytime.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="sidebar-widget">
+      <div class="widget-header">Top Guides</div>
+      <div class="widget-body" style="padding: 8px 18px;">
+        <ul class="quick-links">
+          <li><a href="#"><span class="quick-links-icon">🤖</span> Best Robot Mowers 2026 <span class="quick-arrow">→</span></a></li>
+          <li><a href="#"><span class="quick-links-icon">❄️</span> Best Robot Snow Blowers <span class="quick-arrow">→</span></a></li>
+          <li><a href="#"><span class="quick-links-icon">⛰️</span> Best for Hilly Yards <span class="quick-arrow">→</span></a></li>
+          <li><a href="#"><span class="quick-links-icon">💰</span> Under $1,000 Picks <span class="quick-arrow">→</span></a></li>
+          <li><a href="#"><span class="quick-links-icon">🏆</span> Husqvarna vs Mammotion <span class="quick-arrow">→</span></a></li>
+          <li><a href="#"><span class="quick-links-icon">📊</span> Full Comparison Table <span class="quick-arrow">→</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="sidebar-widget about-widget" id="about">
+      <div class="widget-header">About This Site</div>
+      <div class="widget-body">
+        <div class="about-author">
+          <div class="author-avatar">🏡</div>
+          <div>
+            <div class="author-name">SmartYardReviews</div>
+            <div class="author-sub">South Windsor, CT</div>
+          </div>
+        </div>
+        <p class="about-text">Written by a Connecticut homeowner — not a product testing lab. Every review comes from real use on a real yard with real New England weather. No sponsored content, no paid placements.</p>
+      </div>
+    </div>
+
+  </aside>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <span class="footer-logo">Smart<span>Yard</span>Reviews</span>
+      <p class="footer-desc">Independent reviews of robot lawn mowers and autonomous snow blowers for New England homeowners. Tested in South Windsor, Connecticut.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Reviews</h4>
+      <ul>
+        <li><a href="#">Robot Lawn Mowers</a></li>
+        <li><a href="#">Robot Snow Blowers</a></li>
+        <li><a href="#">Husqvarna Reviews</a></li>
+        <li><a href="#">Yarbo Review</a></li>
+        <li><a href="#">Budget Picks</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Site</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Affiliate Disclosure</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Newsletter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 SmartYardReviews.com · South Windsor, CT</span>
+    <span><a href="#">Affiliate Disclosure</a> · <a href="#">Privacy Policy</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
